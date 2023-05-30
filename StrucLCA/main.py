@@ -70,7 +70,9 @@ def main():
         
         
         
-    st.caption("Disclaimer: Just a friendly reminder - the calculations provided here are for gudiance and should not be used as structural dimensioning. If you start using these results to construct a skyscraper we cannot be held accountable for anything :smile:")
+        
+        
+        st.caption("Disclaimer: Just a friendly reminder - the calculations provided here are for gudiance and should not be used as structural dimensioning. If you start using these results to construct a skyscraper we cannot be held accountable for anything :smile:")
         
             
         
