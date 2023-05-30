@@ -2,6 +2,3 @@ altair
 pandas
 streamlit
 echarts
-steel.py
-wood.py
-
