@@ -32,7 +32,7 @@ def main():
         options = {
             "xAxis": {
                 "type": "category",
-                "data": ['hej', 'hej', "Result 3"],
+                "data": ["hej", "hej", "Result 3"],
                 #"data": [best_steel_profile[0], best_wood_profile[1], "Result 3"],
             },
             "yAxis": {"type": "value"},
