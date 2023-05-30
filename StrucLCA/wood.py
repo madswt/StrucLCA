@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 27 14:24:30 2023
-
-@author: caldo
-"""
 import pandas as pd
 import numpy as np
 
@@ -14,7 +8,7 @@ import numpy as np
 def wood_calc(p, L):
     
     # Load data 
-    wood_data = pd.read_csv('/app/struclca/StrucLCA/wood.csv' , sep=';')
+    wood_data = pd.read_csv('app/struclca/StrucLCA/wood.csv' , sep=';')
     wood = wood_data.to_numpy()
     
     
@@ -65,10 +59,19 @@ def wood_calc(p, L):
             
       
     best_wood_beam = [lowest_value, lowest_value_col1]
-
-    return best_wood_beam
+    
+   
+    if len(filtered_matrix_result) == 0:
+        return 0
+    else:    
+        return best_wood_beam
             
-         
+    
+    
+    
+best_profile = wood_calc(20,20)
+
+
 # print("Lowest value in column 5:", lowest_value)
 # print("Corresponding value from column 1:", lowest_value_col1)    
 
