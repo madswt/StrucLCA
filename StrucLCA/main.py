@@ -34,7 +34,9 @@ def main():
     
             
     """       
-
+    st.expander("Advanced options")
+    
+    
     beam_length = st.number_input('Span (meters):', min_value=0, step=1)
     load = st.number_input('Load (kN/m):', min_value=0, step=1)
 
