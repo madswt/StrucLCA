@@ -23,7 +23,7 @@ def main():
 
     if st.button('Enter'):
         # Perform calculations
-        #best_steel_profile, deflection = steel_calc(load, beam_length)
+        best_steel_profile, deflection = steel_calc(load, beam_length)
         #best_wood_profile = wood_calc(load, beam_length)
         
         
@@ -32,7 +32,7 @@ def main():
         options = {
             "xAxis": {
                 "type": "category",
-                "data": ["hej", "hej", "Result 3"],
+                "data": [best_steel_profile[0], "hej", "Result 3"],
                 #"data": [best_steel_profile[0], best_wood_profile[1], "Result 3"],
             },
             "yAxis": {"type": "value"},
