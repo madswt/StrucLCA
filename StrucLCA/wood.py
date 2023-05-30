@@ -1,8 +1,6 @@
 import pandas as pd
 import numpy as np
 
-# L = 5 #[m]
-# p = 10 #[kN/m]
 
 
 def wood_calc(p, L):
