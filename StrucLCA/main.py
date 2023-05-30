@@ -24,7 +24,7 @@ def main():
     
     Hey there, Tim! :sunglasses:
 
-    We're delighted to have you join our little tool.
+    We're delighted to show you join our little tool.
     
     Curious about the best beam material for minimizing CO2 emissions? :earth_americas:
     
