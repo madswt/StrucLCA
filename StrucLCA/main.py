@@ -24,7 +24,7 @@ def main():
     if st.button('Enter'):
         # Perform calculations
         best_steel_profile, deflection = steel_calc(load, beam_length)
-        #best_wood_profile = wood_calc(load, beam_length)
+        best_wood_profile = wood_calc(load, beam_length)
         
         
         # Generate chart
