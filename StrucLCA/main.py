@@ -41,29 +41,9 @@ def main():
 
     # Create the expander
     with st.expander("Common loads"):
-        st.markdown("""
-    <style>
-    .hidden-borders {
-        border-collapse: collapse;
-        border: none;
-    }
-    .hidden-borders th,
-    .hidden-borders td {
-        border: none;
-        padding: 6px 12px;
-        text-align: left;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-    # Create the table using custom HTML
-    st.markdown('<table class="hidden-borders"><tbody>', unsafe_allow_html=True)
-    for load in common_loads:
-        st.markdown(f'<tr><td>{load[0]}</td><td>{load[1]}</td></tr>', unsafe_allow_html=True)
-    st.markdown('</tbody></table>', unsafe_allow_html=True)
     
-        #table_data = list(zip(*common_loads))
-        #st.table(table_data)
+        table_data = list(zip(*common_loads))
+        st.table(table_data)
         
     
     
