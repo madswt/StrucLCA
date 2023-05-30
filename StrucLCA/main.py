@@ -18,13 +18,13 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 
 def main():
-    st.title('Make informed design decisions:heavy_exclamation_mark: ')
+    st.title('#Make informed design decisions:heavy_exclamation_mark: ')
     st.write('Hello Tim :sunglasses:')
 
     beam_length = st.number_input('Span (meters):', min_value=0, step=1)
     load = st.number_input('Load (kN/m):', min_value=0, step=1)
 
-    if st.button('Enter'):
+    if st.button('Calculate'):
         # Perform calculations
         best_steel_profile, deflection = steel_calc(load, beam_length)
         best_wood_profile = wood_calc(load, beam_length)
