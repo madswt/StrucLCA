@@ -19,7 +19,18 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def main():
     st.title('Make informed design decisions:heavy_exclamation_mark: ')
-    st.write('Hello Tim :sunglasses:')
+    """
+    
+    Hey there, Tim! 😎
+
+    We're delighted to have you join our little tool.
+    
+    Curious about the best beam material for minimizing CO2 emissions? Just input your load and span, click "Calculate", and see a simple bar chart comparing steel, wood, and concrete in terms of their estimated CO2 equivalent emissions.
+    
+    
+    
+            
+    """       
 
     beam_length = st.number_input('Span (meters):', min_value=0, step=1)
     load = st.number_input('Load (kN/m):', min_value=0, step=1)
