@@ -14,7 +14,7 @@ import numpy as np
 def wood_calc(p, L):
     
     # Load data 
-    wood_data = pd.read_csv('/Users/madswestergaard/Desktop/StrucLCA/wood.csv' , sep=';')
+    wood_data = pd.read_csv('./wood.csv' , sep=';')
     wood = wood_data.to_numpy()
     
     
