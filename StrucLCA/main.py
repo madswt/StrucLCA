@@ -35,7 +35,8 @@ def main():
         options = {
             "xAxis": {
                 "type": "category",
-                "data": [best_steel_profile[0], best_wood_profile[1], best_concrete_profile[0]],
+                #"data": [best_steel_profile[0], best_wood_profile[1], best_concrete_profile[0]],
+                "data": ['1','2','3']
             },
             "yAxis": {"type": "value"},
             
@@ -43,7 +44,7 @@ def main():
             #                     (best_wood_profile[0]*10e-6*beam_length)*64.8,
             #                     ((best_concrete_profile[1]*1e-9*beam_length*301.24)+(best_concrete_profile[2]*1e-9*beam_length*439*7.7))], 
             #                     "type": "bar"}],
-            "series": [{"data": [(best_steel_profile[1]*1e-6*beam_length)*(1110*7.85),"type":"bar"}],
+            "series": [{"data": [(best_steel_profile[1]*1e-6*beam_length)*(1110*7.85)],"type":"bar"}],
         }
         st_echarts(options=options, height="500px")
             
