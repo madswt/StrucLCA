@@ -42,7 +42,7 @@ def main():
     # Create the expander
     with st.expander("Common loads :weight_lifter:"):
 
-        table_data = [["Column 1", "Column 2", "Column 3", "Column 4"]]+list(zip(*common_loads))
+        table_data = list(zip(*common_loads))
         st.table(table_data)
     
     
