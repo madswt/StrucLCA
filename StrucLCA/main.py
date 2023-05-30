@@ -36,7 +36,7 @@ def main():
             },
             "yAxis": {"type": "value"},
             
-            "series": [{"data": [((best_steel_profile[1]*1e-6*beam_length)*7,85)*1110, (best_wood_profile[0]*10e-6*beam_length)*64.8,1], "type": "bar"}],
+            "series": [{"data": [(best_steel_profile[1]*1e-6*beam_length)*(1110*7,85), (best_wood_profile[0]*10e-6*beam_length)*64.8,1], "type": "bar"}],
         }
         st_echarts(options=options, height="500px")
             
