@@ -25,7 +25,7 @@ def main():
 
     We're delighted to have you join our little tool.
     
-    Curious about the best beam material for minimizing CO2 emissions? :earth:
+    Curious about the best beam material for minimizing CO2 emissions? :earth_americas:
     
     Just input your load and span, click "Calculate", and see a simple bar chart comparing steel, wood, and concrete in terms of their estimated CO2 equivalent emissions.
     
