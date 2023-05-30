@@ -35,27 +35,13 @@ def main():
             
     """       
     common_loads = [
-    ("Domestic and residential", "3 kN/m"),
-    ("Offices", "5 kN/m"),
-    ("Areas where people may congregate", "6 kN/m"),
-    ("Shopping", "8 kN/m")
-    ]
-    common_loads = [
     ("Domestic and residential", "Offices","Areas where people may congregate", "Shopping"),
     ( "3 kN/m","5 kN/m","6 kN/m","8 kN/m")
     ]
 
     # Create the expander
     with st.expander("Common loads"):
-        # Apply CSS styling to hide borders
-        st.markdown("""
-        <style>
-        table {border-collapse: collapse;}
-        td, th {border: none;}
-        </style>
-        """, unsafe_allow_html=True)
-
-        # Create the table
+        
         table_data = list(zip(*common_loads))
         st.table(table_data)
         
