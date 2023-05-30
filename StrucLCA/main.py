@@ -19,6 +19,8 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def main():
     st.title('Make informed design decisions:heavy_exclamation_mark: ')
+    st.write('Hello Tim :sunglasses:
+             ')
 
     beam_length = st.number_input('Span (meters):', min_value=0, step=1)
     load = st.number_input('Load (kN/m):', min_value=0, step=1)
