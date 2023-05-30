@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 27 14:24:30 2023
-
-@author: caldo
-"""
 import pandas as pd
 import numpy as np
 
@@ -36,7 +30,7 @@ def concrete_calc(p, L):
     # For loops for calculating deflection
     deflection_column = []
     for i in range(len(concrete)):
-        deflection_fin = 1.5*(5/384 * ((p * (L*10**3)**4) / (E_0 * (1/12 * concrete[i,1] * concrete[i,2]**3)))) 
+        deflection_fin = 5*(5/384 * ((p * (L*10**3)**4) / (E_0 * (1/12 * concrete[i,1] * concrete[i,2]**3)))) 
         deflection_column.append(deflection_fin)
     concrete_full_matrix = np.column_stack((concrete_with_utility, np.array(deflection_column)))
     
