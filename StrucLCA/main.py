@@ -2,7 +2,7 @@ import os
 import streamlit as st
 from streamlit_echarts import st_echarts
 from steel import steel_calc
-#from wood import wood_calc
+from wood import wood_calc
 
 
 
