@@ -56,9 +56,15 @@ def main():
             "xAxis": {
                 "type": "category",
                 "data": [best_steel_profile[0], best_wood_profile[1], best_concrete_profile[0]],
+                "name": "Materials",
 
             },
-            "yAxis": {"type": "value"},
+            #"yAxis": {"type": "value"},
+            
+            "yAxis": {
+                "type": "value",
+                "name": "kg CO2-eq",  # Add y-axis label
+            },
             
             "series": [{"data": [(best_steel_profile[1]*1e-6*beam_length)*(1110*7.85), 
                                  (best_wood_profile[0]*10e-6*beam_length)*64.8,
@@ -71,7 +77,7 @@ def main():
         
         
         
-        
+        "---"
         st.caption("Disclaimer: Just a friendly reminder - the calculations provided here are for gudiance and should not be used as structural dimensioning. If you start using these results to construct a skyscraper we cannot be held accountable for anything :smile:")
         
             
