@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 27 13:28:33 2023
-
-@author: ander
-"""
-
 import pandas as pd
 import numpy as np
 
@@ -69,6 +62,5 @@ beam_length = 8        #[m]
 load        = 20        #[kN/m]
 
 best_profile , deflection = steel_calc(load,beam_length)
-print(best_profile)
-print(deflection)
+
 
