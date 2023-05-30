@@ -13,7 +13,7 @@ def wood_calc(p, L):
     
     # Strength and stifness parameters, GL30h
     sigma_m_k = 30
-    kmod = 0.6
+    kmod = 0.9
     gamma = 1.35
     sigma_m_d = sigma_m_k/gamma * kmod
     E_0 = 13600 #[MPa]
@@ -28,7 +28,7 @@ def wood_calc(p, L):
     
     
     # For loops for calculating deflection
-    kdef = 0.6
+    kdef = 0
     deflection_column = []
     for i in range(len(wood)):
         deflection_fin = (5/384 * ((p * (L*10**3)**4) / (E_0 * (1/12 * wood[i,1] * wood[i,2]**3)))) * (1 + 1 * kdef)
