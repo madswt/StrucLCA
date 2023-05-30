@@ -21,7 +21,7 @@ def main():
     st.title('Make informed design decisions:heavy_exclamation_mark: ')
     """
     
-    Hey there, Tim! 😎
+    Hey there, Tim! :sunglasses:
 
     We're delighted to have you join our little tool.
     
@@ -60,6 +60,11 @@ def main():
                                  "type": "bar"}],
         }
         st_echarts(options=options, height="500px")
+        
+        """
+        Above, you'll find three cross-sections along with their corresponding CO2 emissions. 
+        Please keep in mind that if the load or span exceeds the capabilities of a particular material, the bar chart will display a zero value for that material.
+        """
             
         
 
