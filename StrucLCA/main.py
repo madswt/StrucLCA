@@ -65,11 +65,25 @@ def main():
                 "name": "kg CO2-eq",
             },
             
-            "series": [{"data": [(best_steel_profile[1]*1e-6*beam_length)*(1110*7.85), 
-                                 (best_wood_profile[0]*10e-6*beam_length)*64.8,
-                                 ((best_concrete_profile[1]*1e-9*beam_length*301.24)+(best_concrete_profile[2]*1e-9*beam_length*439*7.7))],
-                                 "itemStyle": {"color": "orange" if value == min_values else None},
-                                 "type": "bar"}],
+            
+             "data": [
+                {
+                    "value": (best_steel_profile[1]*1e-6*beam_length)*(1110*7.85),
+                    "itemStyle": {"color": "orange" if value == min_values else None},
+                },
+                {
+                    "value": (best_wood_profile[0]*10e-6*beam_length)*64.8,
+                    "itemStyle": {"color": "orange" if value == min_values else None},
+                },
+                {
+                    "value": ((best_concrete_profile[1]*1e-9*beam_length*301.24)+(best_concrete_profile[2]*1e-9*beam_length*439*7.7)),
+                    "itemStyle": {"color": "orange" if value == min_values else None},
+                },
+           # "series": [{"data": [(best_steel_profile[1]*1e-6*beam_length)*(1110*7.85), 
+                                # (best_wood_profile[0]*10e-6*beam_length)*64.8,
+                                # ((best_concrete_profile[1]*1e-9*beam_length*301.24)+(best_concrete_profile[2]*1e-9*beam_length*439*7.7))],
+                               #  "itemStyle": {"color": "orange" if value == min_values else None},
+                               #  "type": "bar"}],
         }
         st_echarts(options=options, height="500px")
         
