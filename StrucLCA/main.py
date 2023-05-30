@@ -3,6 +3,8 @@ import streamlit as st
 from streamlit_echarts import st_echarts
 from steel import steel_calc
 from wood import wood_calc
+from concrete import concrete_calc
+
 
 
 
@@ -25,6 +27,7 @@ def main():
         # Perform calculations
         best_steel_profile, deflection = steel_calc(load, beam_length)
         best_wood_profile = wood_calc(load, beam_length)
+        best_concrete_profile = concrete_calc(load, beam_length)
         
         
         # Generate chart
@@ -32,11 +35,14 @@ def main():
         options = {
             "xAxis": {
                 "type": "category",
-                "data": [best_steel_profile[0], best_wood_profile[1], "Result 3"],
+                "data": [best_steel_profile[0], best_wood_profile[1], best_concrete_profile[0]],
             },
             "yAxis": {"type": "value"},
             
-            "series": [{"data": [(best_steel_profile[1]*1e-6*beam_length)*(1110*7.85), (best_wood_profile[0]*10e-6*beam_length)*64.8,1], "type": "bar"}],
+            "series": [{"data": [(best_steel_profile[1]*1e-6*beam_length)*(1110*7,85), 
+                                 (best_wood_profile[0]*10e-6*beam_length)*64.8,
+                                 ((best_concrete_profile[1]*1e+9*beam_length*301,24)+(best_concrete_profile[2]*beam_length*439*7.7))], 
+                                 "type": "bar"}],
         }
         st_echarts(options=options, height="500px")
             
