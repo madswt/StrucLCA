@@ -44,7 +44,7 @@ def main():
         best_wood_profile = wood_calc(load, beam_length)
         best_concrete_profile = concrete_calc(load, beam_length)
         "---"
-        st.header("Wupti! :100:")
+        st.header("Wupti!")
         """
         Below, you'll find three cross-sections along with their corresponding CO2 emissions. 
         Please keep in mind that if the load or span exceeds the capabilities of a particular material, the bar chart will display a zero value for that material.
@@ -68,6 +68,9 @@ def main():
         st_echarts(options=options, height="500px")
         
         
+        
+        
+        st.caption("Disclaimer: Just a friendly reminder - the calculations provided here are for gudiance and should not be used as structural dimensioning. If you start using these results to construct a skyscraper we cannot be held accountable for anything :smile:
         
             
         
