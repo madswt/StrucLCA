@@ -11,8 +11,8 @@ from wood import wood_calc
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Change current working directory to your desired folder path
-folder_path = '/Users/madswestergaard/Desktop/StrucLCA'
-os.chdir(folder_path)
+#folder_path = '/Users/madswestergaard/Desktop/StrucLCA'
+#os.chdir(folder_path)
 
 
 def main():
