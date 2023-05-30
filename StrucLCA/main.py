@@ -84,7 +84,7 @@ def main():
                                 # ((best_concrete_profile[1]*1e-9*beam_length*301.24)+(best_concrete_profile[2]*1e-9*beam_length*439*7.7))],
                                #  "itemStyle": {"color": "orange" if value == min_values else None},
                                #  "type": "bar"}],
-       # }
+        },
         st_echarts(options=options, height="500px")
         
         
