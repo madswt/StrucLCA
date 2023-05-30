@@ -43,8 +43,8 @@ def main():
     with st.expander("Common loads :weight_lifter:"):
     
         table_data = list(zip(*common_loads))
-        column_names = ["A", "B", "C", "D"]
-        row_names = ["Specific use", "Load 2"]
+        row_names = ["A", "B", "C", "D"]
+        column_names = ["Specific use", "Load 2"]
         st.table(table_data, header=[column_names], index=[row_names])
     
     
