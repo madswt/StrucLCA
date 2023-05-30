@@ -13,8 +13,8 @@ def wood_calc(p, L):
     
     # Strength and stifness parameters, GL30h
     sigma_m_k = 30
-    kmod = 0.9
-    gamma = 1.35
+    kmod = 0.8
+    gamma = 1.3
     sigma_m_d = sigma_m_k/gamma * kmod
     E_0 = 13600 #[MPa]
     
