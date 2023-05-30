@@ -78,16 +78,16 @@ def main():
                     "data": [
                         {
                             "value": round((best_steel_profile[1]*1e-6*beam_length)*(1110*7.85)),
-                            #"itemStyle": {"color": "orange" if value == min_values else None},
+                            "itemStyle": {"color": "orange" if (best_steel_profile[1]*1e-6*beam_length)*(1110*7.85) == min_values else None},
                             "label": {"show": True, "position": "top"}
                         },
                         {
-                            "value": (best_wood_profile[0]*10e-6*beam_length)*64.8,
+                            "value": round((best_wood_profile[0]*10e-6*beam_length)*64.8),
                             "itemStyle": {"color": "orange"},
                             "label": {"show": True, "position": "top"}
                         },
                         {
-                            "value": ((best_concrete_profile[1]*1e-9*beam_length*301.24)+(best_concrete_profile[2]*1e-9*beam_length*439*7.7)),
+                            "value": round(((best_concrete_profile[1]*1e-9*beam_length*301.24)+(best_concrete_profile[2]*1e-9*beam_length*439*7.7))),
                             "itemStyle": {"color": None},
                             "label": {"show": True, "position": "top"}
                         }
