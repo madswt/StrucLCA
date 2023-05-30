@@ -42,10 +42,8 @@ def main():
     # Create the expander
     with st.expander("Common loads :weight_lifter:"):
 
-        table_data = list(zip(*common_loads))
-        row_names = ["A", "B", "C", "D"]
-        column_names = ["Specific use", "Load 2"]
-        st.table(table_data, header=[column_names], index=[row_names])
+        table_data = [["Column 1", "Column 2", "Column 3", "Column 4"]]+list(zip(*common_loads))
+        st.table(table_data)
     
     
     beam_length = st.number_input('Span (meters):', min_value=0, step=1)
