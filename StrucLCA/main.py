@@ -100,7 +100,7 @@ def main():
 
 
 
-        st_echarts(options=options, height="500px")
+        st_.bar_charts(options=options, height="500px")
         
         
         
