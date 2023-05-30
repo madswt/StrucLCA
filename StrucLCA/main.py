@@ -78,7 +78,7 @@ def main():
                     "data": [
                         {
                             "value": round((best_steel_profile[1]*1e-6*beam_length)*(1110*7.85)),
-                            "itemStyle": {"color": "orange" if (best_steel_profile[1]*1e-6*beam_length)*(1110*7.85) == min_values else None},
+                            #"itemStyle": {"color": "orange" if (best_steel_profile[1]*1e-6*beam_length)*(1110*7.85) == min_values else None},
                             "label": {"show": True, "position": "top"}
                         },
                         {
