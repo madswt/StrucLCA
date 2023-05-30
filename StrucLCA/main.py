@@ -40,7 +40,7 @@ def main():
     ]
 
     # Create the expander
-    with st.expander("Common loads"):
+    with st.expander("Common loads :weight_lifter:"):
     
         table_data = list(zip(*common_loads))
         st.table(table_data)
@@ -58,8 +58,8 @@ def main():
         "---"
         st.header("Wupti!")
         """
-        Below, you'll find three cross-sections along with their corresponding CO2 emissions. 
-        Please keep in mind that if the load or span exceeds the capabilities of a particular material, the bar chart will display a zero value for that material.
+        Below, you'll find three profiles along with their corresponding CO2 emissions. 
+        Please keep in mind that if the load or span exceeds the capacities of a particular material, the bar chart will display a zero value for that material.
         """
         
         # Generate chart
