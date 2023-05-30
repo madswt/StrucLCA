@@ -67,7 +67,7 @@ def concrete_calc(p, L):
 
     
     if len(filtered_matrix_result) == 0:
-        return 0
+        return [0,0,0]
     else:    
         return best_concrete_beam
             
