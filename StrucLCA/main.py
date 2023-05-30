@@ -73,17 +73,17 @@ def main():
                             #     "type": "bar"}],
       #  }
    
-            "series": [
+             "series": [
                 {
                     "data": [
                         {
                             "value": (best_steel_profile[1]*1e-6*beam_length)*(1110*7.85),
-                            "itemStyle": {"color": "orange" if data['value'] == min_values else None},
+                            #"itemStyle": {"color": "orange" if value == min_values else None},
                             "label": {"show": True, "position": "top"}
                         },
                         {
                             "value": (best_wood_profile[0]*10e-6*beam_length)*64.8,
-                            "itemStyle": {"color": None},
+                            "itemStyle": {"color": "orange"},
                             "label": {"show": True, "position": "top"}
                         },
                         {
@@ -96,6 +96,7 @@ def main():
                 }
             ],
         }
+
 
 
 
