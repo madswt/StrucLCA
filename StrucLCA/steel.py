@@ -18,7 +18,7 @@ def find_index_of_max_value_below_threshold(lst, threshold1):
     return max_index
 
 def steel_calc(p , l):
-    steel_data = pd.read_csv('./steel.csv' , sep=';')
+    steel_data = pd.read_csv('steel.csv' , sep=';')
     
     steel = steel_data.to_numpy()
     # steel = np.delete(steel,0,1)
