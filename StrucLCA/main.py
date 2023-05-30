@@ -34,10 +34,12 @@ def main():
     
             
     """       
-    with st.expander("Advanced options"):
-        option1 = st.checkbox("Option 1")
-        option2 = st.slider("Option 2", 0, 10, 5)
-        option3 = st.selectbox("Option 3", ["A", "B", "C"])
+    with st.expander("Common loads"):
+        st.write("Domestic and residential               3 kN/m")
+        st.write("Offices                                5 kN/m")
+        st.write("Areas where people may congregate      6 kN/m")
+        st.write("Shopping                               8 kN/m")
+        
     
     
     beam_length = st.number_input('Span (meters):', min_value=0, step=1)
