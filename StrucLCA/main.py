@@ -40,6 +40,10 @@ def main():
     ("Areas where people may congregate", "6 kN/m"),
     ("Shopping", "8 kN/m")
     ]
+    common_loads = [
+    ("Domestic and residential", "Offices","Areas where people may congregate", "Shopping"),
+    ( "3 kN/m","5 kN/m","6 kN/m","8 kN/m")
+    ]
 
     # Create the expander
     with st.expander("Common loads"):
@@ -91,7 +95,7 @@ def main():
         
             #"series": [{"data": [(best_steel_profile[1]*1e-6*beam_length)*(1110*7.85), 
                             #     (best_wood_profile[0]*10e-6*beam_length)*64.8,
-                           #      ((best_concrete_profile[1]*1e-9*beam_length*301.24)+(best_concrete_profile[2]*1e-9*beam_length*439*7.7))],
+                           #      ((best_concrete_profile[1]*1e-9*beam_length*330)+(best_concrete_profile[2]*1e-9*beam_length*439*7.7))],
                             #     "type": "bar"}],
       #  }
    
