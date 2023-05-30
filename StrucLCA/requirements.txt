@@ -3,4 +3,4 @@ pandas
 streamlit
 echarts
 numpy
-echarts
+streamlit_echarts
