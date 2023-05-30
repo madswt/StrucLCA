@@ -32,12 +32,11 @@ def main():
         options = {
             "xAxis": {
                 "type": "category",
-                "data": [best_steel_profile[0], "hej", "Result 3"],
-                #"data": [best_steel_profile[0], best_wood_profile[1], "Result 3"],
+                "data": [best_steel_profile[0], best_wood_profile[1], "Result 3"],
             },
             "yAxis": {"type": "value"},
-            "series": [{"data": [1,1,1], "type": "bar"}],
-           # "series": [{"data": [best_steel_profile[1]*1e-6*beam_length*10, best_wood_profile[0]*10e-6*10,1], "type": "bar"}],
+            
+            "series": [{"data": [best_steel_profile[1]*1e-6*beam_length*10, best_wood_profile[0]*10e-6*10,1], "type": "bar"}],
         }
         st_echarts(options=options, height="500px")
             
