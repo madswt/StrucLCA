@@ -44,6 +44,7 @@ def main():
         best_wood_profile = wood_calc(load, beam_length)
         best_concrete_profile = concrete_calc(load, beam_length)
         "---"
+        st.header(Wupti! :100:)
         """
         Below, you'll find three cross-sections along with their corresponding CO2 emissions. 
         Please keep in mind that if the load or span exceeds the capabilities of a particular material, the bar chart will display a zero value for that material.
