@@ -35,7 +35,7 @@ def main():
             
     """       
     with st.expander("Common loads"):
-        st.write("Domestic and residential               3 kN/m")
+        st.write("Domestic and residential") st.write("3 kN/m")
         st.write("Offices                                5 kN/m")
         st.write("Areas where people may congregate      6 kN/m")
         st.write("Shopping                               8 kN/m")
