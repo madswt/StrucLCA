@@ -44,7 +44,8 @@ def main():
     
         table_data = list(zip(*common_loads))
         st.table(table_data)
-        
+        column_names = ["A", "B", "C", "D"]
+        row_names = ["Specific use", "Load 2"]
     
     
     beam_length = st.number_input('Span (meters):', min_value=0, step=1)
